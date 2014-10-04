@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/zhus/Workarea/GPU04/Test94_0272/CPU_MC_Plot02'
+let g:netrw_dirhist_2='/home/zhus/Workarea/Bkg_substraction/09DT_pipi/For_Fit/Wgt_Evti/Selnear100'
+let g:netrw_dirhist_3='/home/zhus/Workarea/Bkg_substraction/09DT_pipi02/For_Fit/Wgt_Evti/Selnear100'
+let g:netrw_dirhist_4='/home/zhus/Workarea/GPU04'
+let g:netrw_dirhist_5='/home/zhus/Workarea/GPU04/Test94_0289/Plot02/phikk'
+let g:netrw_dirhist_6='/home/zhus/Workarea/GPU04/DataHist_Wgt/phikaka'
+let g:netrw_dirhist_7='/home/zhus/Workarea/GPU04/Test96_0113/Plot/phipp'
+let g:netrw_dirhist_8='/home/zhus/Workarea/GPU05/Test78_0101/my_Pwa_test10/include'
+let g:netrw_dirhist_9='/home/zhus/Workarea/Data09_12_NewSele/test03kaka/fitPhi'
