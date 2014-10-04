@@ -1,0 +1,65 @@
+" filesave encode
+set fenc=utf-8
+" fileopen encode guess
+set fencs=utf-8,gb2312,ucs-bom,gb18030,gbk,cp936,big5
+syntax on
+set hlsearch
+set number
+set ignorecase smartcase
+set ruler
+
+set autoindent
+set cindent
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+
+call pathogen#infect()
+map <silent> <leader>tl :TlistToogle<cr>
+au! BufRead,BufNewFile *.cl          set filetype=cpp
+nmap tbn :tabnew<Space>
+"
+"let Tlist_Auto_Open = 1
+"let Tlist_WinWidth=30
+" set up filetype 
+"
+let Tlist_Use_Left_Window = 1 
+let Tlist_Show_One_File = 1 
+" Sort type 'name' or 'order'
+let Tlist_Sort_Type = "name"
+let Tlist_Compact_Format = 1
+filetype plugin indent on
+
+" set neocomplcache
+let g:neocomplcache_enable_at_startup = 1
+""""""""""""""""""""""""""""""""
+""" MiniBufExpl
+""""""""""""""""""""""""""""""""
+"let g:miniBufExplMapWindowNavVim = 1 
+"let g:miniBufExplMapWindowNavArrows = 1 
+"let g:miniBufExplMapCTabSwitchBufs = 1 
+"let g:miniBufExplModSelTarget = 1 
+"let g:miniBufExplMoreThanOne = 0
+
+"" change buffer direction
+"noremap <silent> <Left> :bp<CR>
+"noremap <silent> <Right> :bn<CR>
+
+"-- WinManager setting --
+"    let g:winManagerWindowLayout='FileExplorer|TagList' " 设置我们要管理的插件
+"let g:winManagerWindowLayout='TagList|FileExplorer' " 设置我们要管理的插件
+"let g:persistentBehaviour=0 " 如果所有编辑文件都关闭了，退出vim
+"nmap wm :WMToggle<cr>
+let g:NERDTree_title="[NERDTree]"
+let g:winManagerWindowLayout="NERDTree|TagList"
+let g:persistentBehaviour=0 " 如果所有编辑文件都关闭了，退出vim
+
+function! NERDTree_Start()
+	  exec 'NERDTree'
+endfunction
+
+function! NERDTree_IsValid()
+	  return 1
+endfunction
+
+nmap wm :WMToggle <CR>
